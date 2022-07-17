@@ -1,0 +1,166 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post">
+            
+            <p>Name : <input type="text"  id="myName"></p>
+            
+            <p>Birth Date : <input type="date" id="myId"></p>
+            
+             <p>Address : <br> <textarea name="add" id="add" cols="30" rows="10"></textarea></p>
+            
+           <p>Adhar Number : <input type="number" name="adhar" id="adhar"></p>
+            
+            <p>Blood Group : <input type="text" name="bg" id= "bg"></p>
+            
+            <p>Patient contact Number : <input type="number" name="contact" id="contact"> </p>
+            
+            <p>Emergency Contact Name : <input type="text" name="ename" id="ename"></p>
+            
+            <p>Emergency Number : <input type="number" name="econtact" id="econtact"></p>
+            
+            <p>Gender : 
+                <select name="gender" id="gender">Select Your Gender
+                    <option value="" disabled selected>Select Your Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>        
+            </p>
+            <p>Email : <input type="email" name="email" id="email"></p>
+
+         <input type="submit" id="submission" value="Submit" > </button>  <br>
+        
+        </form>
+    </div>
+
+    <div>
+        <table id="d">
+            <tr> 
+                <th>Name</th>
+                <th>Address</th>
+               
+            </tr>
+        </table>
+    </div>
+    <script src="backend.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <!-- <nav>
+            <div class="nav-link">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Course</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="/WEB DEVELOPMENT/Project/DDU/contact.html" target="_blank">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>-->
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <a id="special" href="#"> <img src="/logos/new (1).png" id="logo" alt=""> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+      <!-- <section class="text-gray-600 body-font" style="user-select: auto;" id="Login" >
+        <div class="container px-5 py-24 mx-auto login" style="user-select: auto;">
+          <div class="flex flex-wrap -m-4" style="user-select: auto;">
+            <div class="p-4 lg:w-1/3" id="login_doctor" style="user-select: auto;">
+              <div class="dricon h-full  bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative" style="user-select: auto;">
+                <img src="/logos/drl.png" alt=""> <hr><hr>
+                <a href="#">Login for Doctor</a>
+                <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4" style="user-select: auto;">
+                  <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200" style="user-select: auto;">
+                  </span>
+                  <span class="text-gray-400 inline-flex items-center leading-none text-sm" style="user-select: auto;">
+                  </span>
+                </div>
+              </div>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="p-4 lg:w-1/3 login_patient" style="user-select: auto;">
+                <div class="dricon h-full bg-dark-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative" style="user-select: auto;">
+                  <img src="/logos/prf.png" alt=""> <hr><hr>
+                  <a href="#">Login for Patient</a>
+                  <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4" style="user-select: auto;">
+                    <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200" style="user-select: auto;">
+                    </span>
+                    <span class="text-gray-400 inline-flex items-center leading-none text-sm" style="user-select: auto;">
+                    </span>
+                  </div>
+                </div>
+            </div> 
+                      </span>
+                      <span class="text-gray-400 inline-flex items-center leading-none text-sm" style="user-select: auto;">
+                      </span>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <div class="container">
+        <div class="logins">
+          <a href="dr_login.html"><img src="/logos/drl.png" alt=""></a> <br>
+          <a href="" id="links_a">Login as Doctor</a>
+
+        </div>
+        <div class="logins">
+          
+          <a href="p_login.php"><img src="/logos/pl.png" alt=""></a> <br>
+          <a href="" id="links_a">Login as Patient</a>
+        </div>
+      </div>
+      <!-- <div class="container2">
+        <div class="h">
+          <a href="">Login as Doctor</a>
+        </div>
+        <div class="h">
+          <a href="">Login as Patient</a>
+        </div>
+      </div> -->
+</body>
+</html>
